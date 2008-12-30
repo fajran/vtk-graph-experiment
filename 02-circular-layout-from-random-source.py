@@ -19,7 +19,7 @@ layout.Update()
 # Viewer
 view = vtkGraphLayoutView()
 view.AddRepresentationFromInputConnection(layout.GetOutputPort())
-# don't forget to don't apply layouting algorithm again
+# don't forget to not apply layouting algorithm again
 view.SetLayoutStrategyToPassThrough()
 
 window = vtkRenderWindow()
