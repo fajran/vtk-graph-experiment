@@ -1,12 +1,15 @@
 
 from vtk import *
 
+# Random graph generator
 source = vtkRandomGraphSource()
 source.SetNumberOfVertices(50)
 source.SetNumberOfEdges(200)
 
+# Get graph from generator
 graph = source.GetOutput()
 
+# Layout the graph
 layout = vtkGraphLayout()
 layout.SetInput(graph)
 
